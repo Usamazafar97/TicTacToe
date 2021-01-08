@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tictactoe.MainPart">
+
+
+       <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#FFFFFF"
+       android:orientation="vertical"
+       android:weightSum="12">
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="10dp"
+               android:background="#FFFFFF"
+               android:text="Player 1 : X"
+               android:textColor="#2dfd02"
+               android:textSize="28dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="10dp"
+               android:background="#FFFFFF"
+               android:text="Player 2 : 0"
+               android:textColor="#FFFF00"
+               android:textSize="28dp"
+               android:textStyle="bold" />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/music_status"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_margin="5dp"
+               android:background="#FFFFFF"
+               android:text="Music :"
+               android:textColor="#000000"
+               android:textSize="24dp" />
+
+           <Button
+               android:id="@+id/start"
+               android:layout_width="80dp"
+               android:layout_height="40dp"
+               android:layout_margin="5dp"
+               android:layout_toRightOf="@id/music_status"
+               android:background="#03DAC6"
+               android:gravity="center"
+               android:text="start" />
+
+           <Button
+               android:layout_weight="0.5"
+               android:id="@+id/reset"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_margin="5dp"
+               android:background="#ff0000"
+               android:onClick="Reset"
+               android:text="reset" />
+
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/status_text_view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:background="#FFFFFF"
+           android:gravity="center"
+           android:text="Player 1 your's turn"
+           android:textColor="#000000"
+           android:textSize="24dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/row_1_column_1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_1_column_1_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+           <Button
+               android:id="@+id/row_1_column_2"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_1_column_2_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+           <Button
+               android:id="@+id/row_1_column_3"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_1_column_3_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/row_2_column_1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_2_column_1_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+           <Button
+               android:id="@+id/row_2_column_2"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_2_column_2_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+           <Button
+               android:id="@+id/row_2_column_3"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_2_column_3_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/row_3_column_1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_3_column_1_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+           <Button
+               android:id="@+id/row_3_column_2"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_3_column_2_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+           <Button
+               android:id="@+id/row_3_column_3"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="#808080"
+               android:onClick="row_3_column_3_method"
+               android:text=" "
+               android:textSize="30dp" />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

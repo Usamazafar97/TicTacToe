@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tictactoe.Draw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2dfd02"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@android:dimen/notification_large_icon_height"
+            android:text="Ooooopppsss"
+            android:textColor="#FFFF00"
+            android:textSize="44dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Match Draw"
+            android:textColor="#FFFF00"
+            android:layout_marginTop="@android:dimen/notification_large_icon_height"
+            android:textSize="44dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/play_again"
+            android:layout_width="140dp"
+            android:layout_marginTop="@android:dimen/notification_large_icon_height"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ff0000"
+            android:text="Play Again" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
